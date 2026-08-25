@@ -58,33 +58,25 @@
 
 ### **FinBlue / Công ty HLP**
 *Vị trí:* **Senior FinTech Developer** | *Thời gian:* 09/2022 – 08/2023
-* **Phát triển ứng dụng:** Tham gia phát triển ứng dụng chuyển tiền trực tuyến giữa Anh và Việt Nam trên nền tảng Flutter.
-* **Xử lý dữ liệu local:** Thực hiện mã hóa dữ liệu giao dịch, thiết kế CSDL local trên Mobile (SQLite/Realm) phục vụ lưu trữ và tra cứu lịch sử.
+* Tham gia phát triển ứng dụng chuyển tiền trực tuyến Anh - Việt Nam trên nền tảng Flutter; thực hiện mã hóa dữ liệu giao dịch và lưu trữ CSDL local.
 
 ---
 
 ### **TEADAO / TNT Solution**
 *Vị trí:* **Mobile Team Leader** | *Thời gian:* 01/2022 – 09/2022
-* **Ghi nhận:** Nhận danh hiệu Nhân viên xuất sắc năm 2021 tại TEADAO.
-* **Phát triển & Quản lý:** Đảm nhận vai trò trưởng nhóm phát triển các ứng dụng tài chính và blockchain.
-* **Chuẩn hóa quy trình:** Hướng dẫn công việc cho nhóm 8 lập trình viên, xây dựng bộ mã nguồn mẫu và áp dụng quy trình Git.
+* Quản lý nhóm 8 lập trình viên phát triển các ứng dụng tài chính và blockchain; đạt danh hiệu *Nhân viên xuất sắc năm 2021*.
 
 ---
 
 ### **Công ty Rikkeisoft**
 *Vị trí:* **Mobile Team Leader / iOS Technical Leader / Senior Developer** | *Thời gian:* 03/2014 – 12/2021 *(7 năm cống hiến)*
-* **Ghi nhận:** Nhận các danh hiệu Mentor xuất sắc 2020, Nhân viên xuất sắc 2018, Nhân viên mới xuất sắc 2015.
-* **Đào tạo & Hướng dẫn (2019 – 2021):** Tham gia phỏng vấn tuyển dụng, xây dựng tài liệu hướng dẫn và hỗ trợ đào tạo thành viên mới cho nhóm Mobile.
-* **Module eKYC Ngân hàng (2020 – 2021):** Tham gia phát triển module eKYC tích hợp công nghệ AI quét giấy tờ (OCR) và nhận diện khuôn mặt cho ứng dụng ngân hàng.
-* **Ứng dụng Chat doanh nghiệp (2019 – 2020):** Phát triển ứng dụng nhắn tin nội bộ hỗ trợ mã hóa tin nhắn, truyền thông thời gian thực qua WebSockets và thông báo.
-* **Dự án cho khách hàng (2014 – 2018):** Tham gia phát triển các ứng dụng iOS cho khách hàng Nhật Bản và Anh Quốc (Inploi, Favor, Live 3s, TokyoParksNavi).
+* Tham gia phát triển các dự án iOS cho khách hàng Nhật/Anh (Inploi, Favor, Live 3s), module eKYC Ngân hàng, hệ thống Chat doanh nghiệp; phụ trách đào tạo thành viên mới. Đạt danh hiệu *Mentor xuất sắc 2020*, *Nhân viên xuất sắc 2018*, *Nhân viên mới xuất sắc 2015*.
 
 ---
 
 ### **Tập đoàn Bảo Việt (BaoViet Holdings)**
 *Vị trí:* **iOS Software Engineer** | *Thời gian:* 03/2018 – 03/2019
-* **Phát triển ứng dụng:** Phát triển chức năng trên ứng dụng quản lý bảo hiểm cho khách hàng sử dụng ngôn ngữ Swift.
-* **Tích hợp dữ liệu:** Lập trình giao tiếp API để truy vấn và hiển thị dữ liệu hợp đồng bảo hiểm từ hệ thống backend.
+* Phát triển các chức năng quản lý bảo hiểm trên ngôn ngữ Swift và lập trình giao tiếp API truy vấn dữ liệu với hệ thống backend.
 
 ---
 
