@@ -28,7 +28,7 @@ Tài liệu này quy định các chuẩn mực, văn phong và quy trình kỹ 
 
 ---
 
-## 🔄 3. Quy Trình Đồng Bộ 3 Định Dạng
+## 🔄 3. Quy Trình Đồng Bộ 3 Định Dạng & Xuất PDF
 
 Mọi thay đổi nội dung CV bắt buộc phải được đồng bộ 100% trên cả 3 định dạng:
 
@@ -37,9 +37,9 @@ Mọi thay đổi nội dung CV bắt buộc phải được đồng bộ 100% t
 3. `CV_NguyenDucPhuc_Agriseco.md`: Bản Markdown văn bản thuần (plain text).
 4. `CV_NguyenDucPhuc_Agriseco.pdf`: File PDF xuất từ Headless Chrome CLI.
 
-### Lệnh Xuất PDF Chuẩn:
+### Lệnh Xuất PDF Chuẩn (Bắt buộc dùng `--no-pdf-header-footer` để xóa file path ở footer & header):
 ```bash
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --print-to-pdf="CV_NguyenDucPhuc_Agriseco.pdf" file://$(pwd)/CV_NguyenDucPhuc_Agriseco.html
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf="CV_NguyenDucPhuc_Agriseco.pdf" file://$(pwd)/CV_NguyenDucPhuc_Agriseco.html
 ```
 
 ---
