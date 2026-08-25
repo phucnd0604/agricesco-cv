@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nguyễn Đức Phúc - Chuyên Viên Phát Triển Phần Mềm / Technical Leader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0c2340; /* Executive Agriseco Deep Navy */
+            --accent-color: #1e6091;  /* Tech Sapphire */
+            --highlight: #d97706;     /* Gold Accent */
+            --text-dark: #1e293b;
+            --text-muted: #475569;
+            --bg-light: #f8fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--text-dark);
+            background-color: #f1f5f9;
+            line-height: 1.5;
+            font-size: 13px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .cv-container {
+            max-width: 920px;
+            margin: 25px auto;
+            background: #ffffff;
+            padding: 40px 48px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+        }
+
+        /* HEADER */
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 18px;
+            margin-bottom: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-main h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .header-main h2 {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-top: 4px;
+            letter-spacing: 0.3px;
+        }
+
+        .header-personal-meta {
+            margin-top: 6px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .header-contact {
+            text-align: right;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .header-contact div {
+            margin-bottom: 3px;
+        }
+
+        .header-contact strong {
+            color: var(--text-dark);
+        }
+
+        /* SECTION STYLING */
+        section {
+            margin-bottom: 22px;
+        }
+
+        .section-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 7px;
+            height: 13px;
+            background-color: var(--highlight);
+            border-radius: 2px;
+        }
+
+        /* SUMMARY */
+        .summary-text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .summary-text li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+
+        .summary-text li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 12px;
+            top: 3px;
+        }
+
+        /* AWARDS BOX */
+        .awards-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .award-card {
+            background-color: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 3.5px solid var(--highlight);
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        .award-title {
+            font-weight: 700;
+            color: #92400e;
+            font-size: 12.5px;
+        }
+
+        .award-desc {
+            font-size: 11.5px;
+            color: #78350f;
+            margin-top: 2px;
+        }
+
+        /* SKILLS GRID */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .skill-category {
+            background-color: var(--bg-light);
+            padding: 9px 12px;
+            border-radius: 6px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .skill-category h4 {
+            font-size: 11.5px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 4px;
+        }
+
+        .tag {
+            background: #e2e8f0;
+            color: #1e293b;
+            font-size: 10.5px;
+            font-weight: 500;
+            padding: 2px 7px;
+            border-radius: 4px;
+        }
+
+        .tag.highlight {
+            background: #dbeafe;
+            color: #1e40af;
+            font-weight: 600;
+        }
+
+        /* EXPERIENCE TIMELINE */
+        .timeline-item {
+            margin-bottom: 16px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .company-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .job-date {
+            font-size: 11.5px;
+            font-weight: 600;
+            color: var(--highlight);
+            background: #fffbeb;
+            padding: 2px 7px;
+            border-radius: 4px;
+            border: 1px solid #fef3c7;
+        }
+
+        .job-bullets {
+            padding-left: 16px;
+            color: var(--text-dark);
+        }
+
+        .job-bullets li {
+            margin-bottom: 4px;
+            text-align: justify;
+        }
+
+        .job-bullets strong {
+            color: var(--primary-color);
+        }
+
+        /* TABLE STYLING */
+        .project-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11.5px;
+            margin-top: 6px;
+        }
+
+        .project-table th, .project-table td {
+            border: 1px solid var(--border-color);
+            padding: 7px 9px;
+            text-align: left;
+        }
+
+        .project-table th {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 10.5px;
+            letter-spacing: 0.4px;
+        }
+
+        .project-table tr:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+
+        /* EDUCATION & FOOTER */
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .edu-title {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* PRINT MEDIA STYLES */
+        @media print {
+            body {
+                background: #ffffff;
+                font-size: 11.5px;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            .section-title {
+                margin-bottom: 8px;
+                padding-bottom: 2px;
+            }
+
+            .timeline-item {
+                margin-bottom: 12px;
+                page-break-inside: avoid;
+            }
+
+            .project-table {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-main">
+            <h1>NGUYỄN ĐỨC PHÚC</h1>
+            <h2>CHUYÊN VIÊN PHÁT TRIỂN PHẦN MỀM / TECHNICAL LEADER</h2>
+            <div class="header-personal-meta">
+                📅 Sinh ngày: <strong>06/04/1991</strong> (Nam) | 📏 Chiều cao: <strong>180 cm</strong> | ⚖️ Cân nặng: <strong>80 kg</strong> (Sức khỏe tốt, ngoại hình cân đối)
+            </div>
+        </div>
+        <div class="header-contact">
+            <div>📍 <strong>Hà Nội, Việt Nam</strong></div>
+            <div>📞 <strong>0364.252.470</strong></div>
+            <div>✉️ <strong>phucnd.work@gmail.com</strong></div>
+        </div>
+    </header>
+
+    <!-- TÓM TẮT NĂNG LỰC -->
+    <section>
+        <div class="section-title">Tóm Tắt Năng Lực Chuyên Môn</div>
+        <div class="summary-text">
+            <ul>
+                <li><strong>10+ Năm Kinh Nghiệm Chuyên Sâu:</strong> Chuyên gia Phát triển Phần mềm & Leader kỹ thuật với hơn 10 năm kinh nghiệm thực chiến phân tích, thiết kế, phát triển và triển khai các hệ thống phần mềm quy mô lớn trên nền tảng Mobile & Web.</li>
+                <li><strong>Am Hiểu Nghiệp Vụ Tài Chính - Ngân Hàng - Bảo Hiểm:</strong> Trực tiếp xây dựng các hệ thống tài chính yêu cầu độ bảo mật cao: Chuyển tiền quốc tế (FinBlue UK-VN), eKYC xác thực sinh trắc học AI cho Ngân hàng, Ứng dụng bảo hiểm số tích hợp CSDL tập trung Oracle (Tập đoàn Bảo Việt), và các nền tảng FinTech/Blockchain.</li>
+                <li><strong>Cơ Sở Dữ Liệu & Tối Ưu Truy Vấn SQL:</strong> Nắm vững kiến thức CSDL, thành thạo thiết kế và tối ưu hóa truy vấn SQL (Oracle, PostgreSQL, MySQL, SQLite, Realm DB), đảm bảo hiệu năng xử lý dữ liệu và xuất báo cáo nghiệp vụ tốc độ cao.</li>
+                <li><strong>Quy Trình SDLC, Docker & CI/CD:</strong> Nắm vững quy trình SDLC (Agile/Scrum), quản lý mã nguồn GitFlow, thiết kế kiểm thử Unit Test, cùng kinh nghiệm đóng gói container (Docker) và tự động hóa chuỗi triển khai (CI/CD pipelines).</li>
+                <li><strong>Lãnh Đạo & Đào Tạo Đội Ngũ:</strong> Khả năng phân tích yêu cầu nghiệp vụ chuyên sâu cùng BA/QA/PM, làm rõ API contract; từng đảm nhận vai trò Mentor xuất sắc, xây dựng, đào tạo và phát triển đội ngũ lập trình viên từ quy mô nhỏ tới lớn.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- GIẢI THƯỞNG & THÀNH TỰU -->
+    <section>
+        <div class="section-title">Giải Thưởng & Thành Tựu Cá Nhân</div>
+        <div class="awards-container">
+            <div class="award-card">
+                <div class="award-title">🏆 Nhân Viên Xuất Sắc Năm 2021</div>
+                <div class="award-desc">Công ty TEADAO — Ghi nhận đóng góp xuất sắc trong phát triển hệ thống FinTech & Blockchain.</div>
+            </div>
+            <div class="award-card">
+                <div class="award-title">🏆 Mentor Xuất Sắc Năm 2020</div>
+                <div class="award-desc">Công ty Rikkeisoft — Thành tích nổi bật trong công tác tuyển dụng, đào tạo & xây dựng Đội ngũ Mobile.</div>
+            </div>
+            <div class="award-card">
+                <div class="award-title">🏆 Nhân Viên Xuất Sắc Năm 2018</div>
+                <div class="award-desc">Công ty Rikkeisoft — Ghi nhận chất lượng bàn giao dự án cao và tinh thần trách nhiệm vượt trội.</div>
+            </div>
+            <div class="award-card">
+                <div class="award-title">🏆 Nhân Viên Mới Xuất Sắc Năm 2015</div>
+                <div class="award-desc">Công ty Rikkeisoft — Ghi nhận sự bứt phá và đóng góp tích cực ngay trong năm đầu tiên gia nhập.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KỸ NĂNG KỸ THUẬT -->
+    <section>
+        <div class="section-title">Kỹ Năng Kỹ Thuật Cốt Lõi</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Nghiệp Vụ & Kiến Trúc Hệ Thống</h4>
+                <div class="skill-tags">
+                    <span class="tag highlight">Chứng Khoán & Tài Chính</span>
+                    <span class="tag highlight">FinTech & eKYC</span>
+                    <span class="tag">System Architecture</span>
+                    <span class="tag">Clean Architecture</span>
+                    <span class="tag">MVVM</span>
+                    <span class="tag">Microservices</span>
+                    <span class="tag">Agile / Scrum</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Cơ Sở Dữ Liệu & SQL</h4>
+                <div class="skill-tags">
+                    <span class="tag highlight">Oracle SQL</span>
+                    <span class="tag highlight">PostgreSQL</span>
+                    <span class="tag highlight">MySQL</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">CoreData</span>
+                    <span class="tag">Realm DB</span>
+                    <span class="tag">Query Optimization</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Ngôn Ngữ & Nền Tảng</h4>
+                <div class="skill-tags">
+                    <span class="tag highlight">Swift / SwiftUI</span>
+                    <span class="tag highlight">Flutter (Dart)</span>
+                    <span class="tag">Objective-C</span>
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">RxSwift</span>
+                    <span class="tag">RESTful APIs</span>
+                    <span class="tag">WebSockets</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>DevOps, Tools & Kiểm Thử</h4>
+                <div class="skill-tags">
+                    <span class="tag highlight">Docker</span>
+                    <span class="tag highlight">CI / CD Pipelines</span>
+                    <span class="tag">Git / GitFlow</span>
+                    <span class="tag">Unit Testing</span>
+                    <span class="tag">Fastlane</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">Technical Docs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KINH NGHIỆM LÀM VIỆC -->
+    <section>
+        <div class="section-title">Kinh Nghiệm Làm Việc Chi Tiết</div>
+
+        <!-- NEOS -->
+        <div class="timeline-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">iOS Technical Leader</span> | <span class="company-name">Neos Vietnam International Co., Ltd</span>
+                </div>
+                <span class="job-date">03/2025 – Hiện tại</span>
+            </div>
+            <ul class="job-bullets">
+                <li><strong>Phát triển & Kiến trúc:</strong> Chủ trì kỹ thuật xây dựng ứng dụng <em>Calomama Plus</em> trên SwiftUI và MVVM, đảm bảo hiệu năng và khả năng mở rộng.</li>
+                <li><strong>Phân tích Yêu cầu & Kết nối Backend:</strong> Phối hợp trực tiếp với BA và Backend Team để làm rõ nghiệp vụ, thống nhất API contracts và cấu trúc CSDL.</li>
+                <li><strong>Kiểm thử & Đóng gói:</strong> Duyệt Code Review, thiết kế Unit Test, quản lý phiên bản GitFlow và kiểm soát luồng đóng gói triển khai ứng dụng.</li>
+                <li><strong>Quản lý & Báo cáo:</strong> Ước lượng công việc, phân chia nhiệm vụ Sprint, hướng dẫn lập trình viên và báo cáo tiến độ trực tiếp tới Ban giám đốc.</li>
+            </ul>
+        </div>
+
+        <!-- FPT SOFTWARE -->
+        <div class="timeline-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Senior Mobile Developer / Software Engineer</span> | <span class="company-name">FPT Software</span>
+                </div>
+                <span class="job-date">08/2023 – 03/2025</span>
+            </div>
+            <ul class="job-bullets">
+                <li><strong>Phát triển Phần mềm Doanh nghiệp:</strong> Xây dựng các module phần mềm phức tạp cho dự án doanh nghiệp lớn, tuân thủ nghiêm ngặt chuẩn kiến trúc và bảo mật.</li>
+                <li><strong>Quy trình SDLC & UAT:</strong> Nắm trọn chu trình từ phân tích thiết kế, viết mã nguồn, Unit Test đến phối hợp với QA/BA kiểm thử UAT trước nghiệm thu.</li>
+                <li><strong>Tự động hóa CI/CD:</strong> Cấu hình quy trình đóng gói phần mềm và quản lý phiên bản Git/CI-CD, giúp giảm 30% thời gian đóng gói và bàn giao.</li>
+            </ul>
+        </div>
+
+        <!-- FINBLUE -->
+        <div class="timeline-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Senior FinTech Developer</span> | <span class="company-name">FinBlue / Công ty HLP</span>
+                </div>
+                <span class="job-date">09/2022 – 08/2023</span>
+            </div>
+            <ul class="job-bullets">
+                <li><strong>Hệ thống Chuyển tiền Quốc tế:</strong> Phát triển ứng dụng FinTech đa nền tảng phục vụ giao dịch chuyển tiền trực tuyến Anh - Việt Nam bảo mật cao.</li>
+                <li><strong>Bảo mật & Tối ưu CSDL:</strong> Áp dụng mã hóa giao dịch end-to-end, xác thực sinh trắc học; thiết kế CSDL local (SQLite/Realm) và tối ưu truy vấn SQL tra cứu lịch sử giao dịch tức thì.</li>
+            </ul>
+        </div>
+
+        <!-- TEADAO -->
+        <div class="timeline-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Mobile Team Leader</span> | <span class="company-name">TEADAO / TNT Solution</span>
+                </div>
+                <span class="job-date">01/2022 – 09/2022</span>
+            </div>
+            <ul class="job-bullets">
+                <li><strong>Vinh danh:</strong> Đạt danh hiệu 🏆 <strong>Nhân viên xuất sắc năm 2021 tại TEADAO</strong>.</li>
+                <li><strong>Quản lý & Phát triển:</strong> Quản lý kỹ thuật và thiết kế các ứng dụng tài chính phi tập trung (DeFi), FinTech và Blockchain.</li>
+                <li><strong>Đào tạo & Chuẩn hóa:</strong> Quản lý team 8 nhân sự; xây dựng tài liệu kiến trúc mẫu, chuẩn hóa quy trình GitFlow và tự động hóa CI/CD.</li>
+            </ul>
+        </div>
+
+        <!-- RIKKEISOFT -->
+        <div class="timeline-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Mobile Team Leader / iOS Technical Leader / Senior Developer</span> | <span class="company-name">Công ty Rikkeisoft</span>
+                </div>
+                <span class="job-date">03/2014 – 12/2021 (7+ Năm)</span>
+            </div>
+            <ul class="job-bullets">
+                <li><strong>Vinh danh & Giải thưởng:</strong> 
+                    🏆 <strong>Mentor xuất sắc 2020</strong> | 
+                    🏆 <strong>Nhân viên xuất sắc 2018</strong> | 
+                    🏆 <strong>Nhân viên mới xuất sắc 2015</strong>.
+                </li>
+                <li><strong>Đào tạo & Xây dựng Đội ngũ (2019 - 2021):</strong> Trực tiếp tham gia công tác tuyển dụng, xây dựng chương trình đào tạo lập trình viên mobile mới, xây dựng Đội ngũ Mobile Rikkeisoft phát triển số lượng và chất lượng vượt bậc.</li>
+                <li><strong>Module eKYC Ngân hàng (2020 - 2021):</strong> Chủ trì kỹ thuật xây dựng ứng dụng eKYC tích hợp module AI quét giấy tờ (OCR), nhận diện khuôn mặt và ghi hình luồng xác thực bảo mật cho Ngân hàng.</li>
+                <li><strong>Hệ thống Chat Doanh nghiệp IM (2019 - 2020):</strong> Thiết kế ứng dụng truyền thông nội bộ mã hóa E2EE, WebSockets real-time, CallKit và Push Notifications phục vụ 10.000+ người dùng.</li>
+                <li><strong>Dự án Quốc tế (2014 - 2018):</strong> Lãnh đạo & hoàn thành 10+ dự án lớn cho thị trường Nhật/Anh (Inploi tích hợp thanh toán Stripe, Favor E-commerce, Live 3s tin thể thao thời gian thực, TokyoParksNavi ứng dụng du lịch định vị GPS/Beacon).</li>
+            </ul>
+        </div>
+
+        <!-- BAOVIET -->
+        <div class="timeline-item">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">iOS Software Engineer</span> | <span class="company-name">Tập đoàn Bảo Việt (BaoViet Holdings)</span>
+                </div>
+                <span class="job-date">03/2018 – 03/2019</span>
+            </div>
+            <ul class="job-bullets">
+                <li><strong>Phát triển Ứng dụng Bảo hiểm:</strong> Xây dựng ứng dụng quản lý bảo hiểm doanh nghiệp trên ngôn ngữ Swift.</li>
+                <li><strong>Tích hợp CSDL & Báo cáo:</strong> Lập trình kết nối dữ liệu nghiệp vụ bảo hiểm, bồi thường với CSDL tập trung Oracle SQL của tập đoàn.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- DỰ ÁN TIÊU BIỂU -->
+    <section>
+        <div class="section-title">Dự Án Tiêu Biểu Bằng Chứng Năng Lực</div>
+        <table class="project-table">
+            <thead>
+                <tr>
+                    <th style="width: 22%;">Tên Dự Án</th>
+                    <th style="width: 24%;">Lĩnh Vực & Vai Trò</th>
+                    <th style="width: 24%;">Công Nghệ Sử Dụng</th>
+                    <th style="width: 30%;">Đóng Góp Cốt Lõi & Kết Quả</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Bảo Hiểm Bảo Việt</strong></td>
+                    <td>Bảo Hiểm / Tài Chính<br><em>Software Engineer</em></td>
+                    <td>Swift, Oracle SQL, Alamofire, CoreData</td>
+                    <td>Số hóa quy trình bồi thường & quản lý hợp đồng kết nối CSDL tập trung Oracle.</td>
+                </tr>
+                <tr>
+                    <td><strong>FinBlue Remittance</strong></td>
+                    <td>FinTech / Chuyển tiền<br><em>Senior Developer</em></td>
+                    <td>Flutter, Dart, SQLite, Encryption, REST</td>
+                    <td>Xây dựng ứng dụng chuyển tiền Anh - VN bảo mật tuyệt đối, tra cứu lịch sử tức thì.</td>
+                </tr>
+                <tr>
+                    <td><strong>Banking eKYC Module</strong></td>
+                    <td>Bảo mật / Ngân hàng<br><em>Technical Lead</em></td>
+                    <td>Flutter, iOS/Android, AI OCR, Live Video</td>
+                    <td>Tự động hóa xác thực sinh trắc học & lưu trữ bằng chứng kiểm toán cho Ngân hàng.</td>
+                </tr>
+                <tr>
+                    <td><strong>IM Chat Platform</strong></td>
+                    <td>Truyền thông Doanh nghiệp<br><em>Technical Lead</em></td>
+                    <td>iOS Native, WebSockets, E2EE, CallKit</td>
+                    <td>Hệ thống chat nội bộ mã hóa đầu cuối chịu tải 10.000+ người dùng không độ trễ.</td>
+                </tr>
+                <tr>
+                    <td><strong>Inploi Recruitment</strong></td>
+                    <td>E-Commerce / HR<br><em>Project Leader</em></td>
+                    <td>Swift, Realm DB, Stripe API, APNS Push</td>
+                    <td>Thuật toán ghép nối ứng viên thông minh tích hợp thanh toán tự động qua Stripe.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- HỌC VẤN & BẰNG CẤP -->
+    <section>
+        <div class="section-title">Học Vấn & Giải Thưởng Khác</div>
+        <div class="edu-item">
+            <div>
+                <span class="edu-title">Đại Học FPT (FPT University)</span> — Kỹ Sư Phần Mềm (Software Engineering)
+                <div style="color: var(--text-muted); font-size: 12px; margin-top: 2px;">• Nền tảng vững chắc về Cấu trúc dữ liệu & Thuật toán, Hệ quản trị CSDL (DBMS), Kiến trúc phần mềm & SDLC.</div>
+            </div>
+            <div style="font-weight: 600; color: var(--accent-color);">2010 – 2014</div>
+        </div>
+        <div style="margin-top: 8px; font-size: 12px;">
+            🏆 <strong>Hackathon Windows 8 (2013):</strong> Thành viên đội thi đạt giải Vòng Chung kết.
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

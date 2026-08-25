@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nguyễn Đức Phúc - Phiên bản Markdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        :root {
+            --primary: #0c2340;
+            --accent: #1e6091;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: var(--primary);
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            border-color: #3b82f6;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 30px auto;
+            background: var(--card-bg);
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border);
+        }
+
+        /* MARKDOWN CONTENT STYLING */
+        #content h1 {
+            color: #60a5fa;
+            font-size: 24px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        #content h2 {
+            color: #93c5fd;
+            font-size: 18px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 4px;
+        }
+
+        #content h3 {
+            color: #f1f5f9;
+            font-size: 15px;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+
+        #content p, #content li {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        #content ul {
+            padding-left: 20px;
+            margin-bottom: 14px;
+        }
+
+        #content li {
+            margin-bottom: 6px;
+        }
+
+        #content strong {
+            color: #ffffff;
+        }
+
+        #content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 18px 0;
+            font-size: 13px;
+        }
+
+        #content th, #content td {
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        #content th {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        #content tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        #content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-title">
+            📄 Nguyễn Đức Phúc - CV Markdown Online
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="btn">🎨 Giao Diện HTML</a>
+            <a href="CV_NguyenDucPhuc_Agriseco.pdf" target="_blank" class="btn btn-primary">📥 Tải File PDF</a>
+            <a href="CV_NguyenDucPhuc_Agriseco.md" target="_blank" class="btn">📝 Raw Markdown</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="content">Đang tải nội dung Markdown...</div>
+    </div>
+
+    <script>
+        fetch('CV_NguyenDucPhuc_Agriseco.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('content').innerHTML = marked.parse(text);
+            })
+            .catch(err => {
+                document.getElementById('content').innerHTML = '<p style="color: #ef4444;">Không thể tải file Markdown. Vui lòng kiểm tra lại đường dẫn.</p>';
+            });
+    </script>
+</body>
+</html>
