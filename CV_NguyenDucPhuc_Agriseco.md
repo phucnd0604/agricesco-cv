@@ -1,5 +1,5 @@
 # CURRICULUM VITAE - NGUYỄN ĐỨC PHÚC
-**CHUYÊN VIÊN PHÁT TRIỂN PHẦN MỀM / TECHNICAL LEADER**
+**CHUYÊN VIÊN PHÁT TRIỂN PHẦN MỀM**
 
 * **Địa chỉ:** Hà Nội, Việt Nam  
 * **Điện thoại:** 0364.252.470  
@@ -11,7 +11,7 @@
 
 ## TÓM TẮT NĂNG LỰC CHUYÊN MÔN
 
-* **Kinh nghiệm làm việc:** Lập trình viên & Technical Lead có hơn 10 năm kinh nghiệm tham gia phân tích, thiết kế, phát triển và triển khai các ứng dụng phần mềm trên nền tảng Mobile và Web.
+* **Kinh nghiệm làm việc:** Lập trình viên có hơn 10 năm kinh nghiệm tham gia phân tích, thiết kế, phát triển và triển khai các ứng dụng phần mềm trên nền tảng Mobile và Web.
 * **Kinh nghiệm nghiệp vụ:** Đã từng tham gia phát triển các sản phẩm trong lĩnh vực Tài chính, Ngân hàng và Bảo hiểm như: Ứng dụng chuyển tiền (FinBlue UK-VN), Module xác thực eKYC cho Ngân hàng, Ứng dụng quản lý bảo hiểm (Tập đoàn Bảo Việt) kết nối CSDL tập trung.
 * **Cơ sở dữ liệu:** Thành thạo các hệ cơ sở dữ liệu chuyên dụng cho Mobile (Realm DB, SQLite, CoreData); có kiến thức cơ bản về các hệ cơ sở dữ liệu quan hệ (Oracle SQL, PostgreSQL, MySQL).
 * **Quy trình & Công cụ:** Hiểu rõ quy trình phát triển phần mềm SDLC (Agile/Scrum), quản lý mã nguồn Git, thực hiện kiểm thử Unit Test, có kinh nghiệm sử dụng Docker và thiết lập chuỗi CI/CD tự động.
@@ -102,7 +102,7 @@
 
 ## HỌC VẤN & GIẢI THƯỞNG KHÁC
 
-* **Đại Học FPT (FPT University)** — Kỹ Sư Phần Mềm *(2010 – 2014)*
+* **Đại Học FPT (FPT University)** — Kỹ Sư Phần Mềm *(Tốt nghiệp năm 2014)*
   * Tốt nghiệp chuyên ngành Kỹ thuật Phần mềm. GPA: 7.0 / 10.
 * **Hackathon Windows 8 (2013):** Thành viên đội thi tham gia Vòng Chung kết.
 
