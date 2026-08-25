@@ -58,27 +58,8 @@
 
 ---
 
-### **FinBlue / Công ty HLP**
-*Vị trí:* **Senior FinTech Developer** | *Thời gian:* 09/2022 – 08/2023
-* Phát triển ứng dụng chuyển tiền trực tuyến Anh - Việt Nam trên nền tảng Flutter; thực hiện mã hóa dữ liệu giao dịch và lưu trữ CSDL local.
-
----
-
-### **TEADAO / TNT Solution**
-*Vị trí:* **Mobile Team Leader** | *Thời gian:* 01/2022 – 09/2022
-* Quản lý nhóm 8 lập trình viên phát triển các ứng dụng tài chính và blockchain; đạt danh hiệu Nhân viên xuất sắc năm 2021.
-
----
-
-### **Công ty Rikkeisoft**
-*Vị trí:* **Mobile Team Leader / iOS Technical Leader / Senior Developer** | *Thời gian:* 03/2014 – 12/2021 *(7 năm)*
-* Phát triển dự án iOS cho khách hàng Nhật/Anh (Inploi, Favor, Live 3s), module eKYC Ngân hàng, Chat doanh nghiệp & đào tạo nhân sự. Đạt danh hiệu Mentor xuất sắc 2020, Nhân viên xuất sắc 2018 & 2015.
-
----
-
-### **Tập đoàn Bảo Việt (BaoViet Holdings)**
-*Vị trí:* **iOS Software Engineer** | *Thời gian:* 03/2018 – 03/2019
-* Phát triển các chức năng quản lý bảo hiểm trên ngôn ngữ Swift và lập trình giao tiếp API truy vấn dữ liệu với hệ thống backend.
+### **Kinh Nghiệm Khác (2014 – 2023)**
+* **Rikkeisoft, TEADAO, FinBlue, Tập đoàn Bảo Việt:** Từng giữ vị trí Team Leader / Senior Developer tại Rikkeisoft, TEADAO, FinBlue, Tập đoàn Bảo Việt (phát triển các sản phẩm FinTech, eKYC Ngân hàng, Chat doanh nghiệp, Bảo hiểm và đào tạo nhân sự).
 
 ---
 
