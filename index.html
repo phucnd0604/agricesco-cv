@@ -34,10 +34,10 @@
             print-color-adjust: exact;
         }
 
-        /* TOP FLOATING ACTION BAR FOR GITHUB PAGES */
+        /* TOP FLOATING ACTION BAR */
         .github-actions-bar {
             background-color: #0f172a;
-            padding: 10px 20px;
+            padding: 12px 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -49,7 +49,7 @@
         }
 
         .actions-logo {
-            font-size: 14px;
+            font-size: 14.5px;
             font-weight: 700;
             color: #ffffff;
             display: flex;
@@ -59,18 +59,17 @@
 
         .actions-buttons {
             display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
+            gap: 12px;
         }
 
         .action-btn {
             background: rgba(255, 255, 255, 0.1);
             color: #ffffff;
             text-decoration: none;
-            padding: 6px 14px;
+            padding: 7px 16px;
             border-radius: 6px;
-            font-size: 12.5px;
-            font-weight: 500;
+            font-size: 13px;
+            font-weight: 600;
             transition: all 0.2s ease;
             display: inline-flex;
             align-items: center;
@@ -87,6 +86,8 @@
         .action-btn-primary {
             background: #2563eb;
             border-color: #3b82f6;
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
         }
 
         .action-btn-primary:hover {
@@ -213,6 +214,8 @@
             border-left: 3.5px solid var(--highlight);
             padding: 8px 12px;
             border-radius: 6px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .award-title {
@@ -239,6 +242,8 @@
             padding: 8px 12px;
             border-radius: 6px;
             border-left: 3px solid var(--accent-color);
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .skill-category h4 {
@@ -263,12 +268,16 @@
             font-weight: 500;
             padding: 2px 7px;
             border-radius: 4px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .tag.highlight {
             background: #dbeafe;
             color: #1e40af;
             font-weight: 600;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         /* EXPERIENCE TIMELINE */
@@ -303,6 +312,8 @@
             padding: 2px 7px;
             border-radius: 4px;
             border: 1px solid #fef3c7;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .job-bullets {
@@ -340,10 +351,14 @@
             text-transform: uppercase;
             font-size: 10.5px;
             letter-spacing: 0.4px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .project-table tr:nth-child(even) {
             background-color: var(--bg-light);
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         /* EDUCATION & FOOTER */
@@ -367,10 +382,15 @@
             margin-bottom: 3px;
         }
 
-        /* PRINT MEDIA STYLES */
+        /* PRINT MEDIA STYLES - PERFECT MATCH WITH HTML WEB UI */
+        @page {
+            size: A4 portrait;
+            margin: 10mm 12mm;
+        }
+
         @media print {
             body {
-                background: #ffffff;
+                background: #ffffff !important;
                 font-size: 11px;
             }
 
@@ -379,10 +399,11 @@
             }
 
             .cv-container {
-                box-shadow: none;
-                padding: 0;
-                margin: 0;
-                max-width: 100%;
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                max-width: 100% !important;
+                border-radius: 0 !important;
             }
 
             .section-title {
@@ -398,6 +419,38 @@
             .project-table {
                 page-break-inside: avoid;
             }
+
+            .award-card {
+                background-color: #fffbeb !important;
+                border-color: #fef3c7 !important;
+                border-left-color: #d97706 !important;
+            }
+
+            .skill-category {
+                background-color: #f8fafc !important;
+                border-left-color: #1e6091 !important;
+            }
+
+            .tag {
+                background-color: #e2e8f0 !important;
+                color: #1e293b !important;
+            }
+
+            .tag.highlight {
+                background-color: #dbeafe !important;
+                color: #1e40af !important;
+            }
+
+            .project-table th {
+                background-color: #0c2340 !important;
+                color: #ffffff !important;
+            }
+
+            .job-date {
+                background-color: #fffbeb !important;
+                border-color: #fef3c7 !important;
+                color: #d97706 !important;
+            }
         }
     </style>
 </head>
@@ -409,17 +462,11 @@
         💼 CV Online — Nguyễn Đức Phúc
     </div>
     <div class="actions-buttons">
-        <a href="CV_NguyenDucPhuc_Agriseco.pdf" target="_blank" class="action-btn action-btn-primary">
-            📥 Xem / Tải CV PDF
-        </a>
-        <a href="md_viewer.html" class="action-btn">
-            📝 Xem bản Markdown Online
-        </a>
-        <a href="CV_NguyenDucPhuc_Agriseco.md" target="_blank" class="action-btn">
-            🔗 Raw Markdown File
+        <a href="CV_NguyenDucPhuc_Agriseco.pdf" target="_blank" download="CV_NguyenDucPhuc_Agriseco.pdf" class="action-btn action-btn-primary">
+            📥 Tải CV dạng PDF
         </a>
         <button onclick="window.print()" class="action-btn">
-            🖨️ In / Save PDF
+            🖨️ In CV / Lưu PDF
         </button>
     </div>
 </div>
@@ -553,7 +600,7 @@
                 <li><strong>Phát triển & Kiến trúc:</strong> Chủ trì kỹ thuật xây dựng ứng dụng hệ sinh thái <em>Calomama Plus</em> dựa trên kiến trúc SwiftUI và MVVM, đảm bảo tính mở rộng và dễ bảo trì.</li>
                 <li><strong>Phân tích Nghiệp vụ & API Contract:</strong> Trực tiếp phối hợp với BA và Backend Team để làm rõ bài toán nghiệp vụ, thống nhất API contracts và cấu trúc CSDL.</li>
                 <li><strong>Kiểm thử & Đóng gói:</strong> Duyệt Code Review, thiết kế Unit Test, quản lý phiên bản mã nguồn GitFlow và kiểm soát luồng đóng gói triển khai ứng dụng.</li>
-                <li><strong>Quản lý & Báo cáo:</strong> Ước lượng khối lượng công việc (estimation), phân chia nhiệm vụ Sprint, hướng dẫn lập trình viên và báo cáo tiến độ trực tiếp tới Ban giám đốc.</li>
+                <li><strong>Quản lý & Báo cáo:</strong> Ưóc lượng khối lượng công việc (estimation), phân chia nhiệm vụ Sprint, hướng dẫn lập trình viên và báo cáo tiến độ trực tiếp tới Ban giám đốc.</li>
             </ul>
         </div>
 

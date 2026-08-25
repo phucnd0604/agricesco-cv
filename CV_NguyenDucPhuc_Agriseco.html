@@ -27,7 +27,7 @@
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             color: var(--text-dark);
-            background-color: #f1f5f9;
+            background-color: #ffffff;
             line-height: 1.5;
             font-size: 12.5px;
             -webkit-print-color-adjust: exact;
@@ -36,11 +36,9 @@
 
         .cv-container {
             max-width: 920px;
-            margin: 25px auto;
+            margin: 0 auto;
             background: #ffffff;
             padding: 38px 46px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            border-radius: 8px;
         }
 
         /* HEADER */
@@ -154,6 +152,8 @@
             border-left: 3.5px solid var(--highlight);
             padding: 8px 12px;
             border-radius: 6px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .award-title {
@@ -180,6 +180,8 @@
             padding: 8px 12px;
             border-radius: 6px;
             border-left: 3px solid var(--accent-color);
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .skill-category h4 {
@@ -204,12 +206,16 @@
             font-weight: 500;
             padding: 2px 7px;
             border-radius: 4px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .tag.highlight {
             background: #dbeafe;
             color: #1e40af;
             font-weight: 600;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         /* EXPERIENCE TIMELINE */
@@ -244,6 +250,8 @@
             padding: 2px 7px;
             border-radius: 4px;
             border: 1px solid #fef3c7;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .job-bullets {
@@ -281,10 +289,14 @@
             text-transform: uppercase;
             font-size: 10.5px;
             letter-spacing: 0.4px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         .project-table tr:nth-child(even) {
             background-color: var(--bg-light);
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
         /* EDUCATION & FOOTER */
@@ -308,27 +320,25 @@
             margin-bottom: 3px;
         }
 
-        /* PRINT MEDIA STYLES */
+        @page {
+            size: A4 portrait;
+            margin: 10mm 12mm;
+        }
+
         @media print {
             body {
-                background: #ffffff;
+                background: #ffffff !important;
                 font-size: 11px;
             }
 
             .cv-container {
-                box-shadow: none;
-                padding: 0;
-                margin: 0;
-                max-width: 100%;
-            }
-
-            .section-title {
-                margin-bottom: 8px;
-                padding-bottom: 2px;
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                max-width: 100% !important;
             }
 
             .timeline-item {
-                margin-bottom: 12px;
                 page-break-inside: avoid;
             }
 
