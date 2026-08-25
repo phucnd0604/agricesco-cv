@@ -1,5 +1,5 @@
 # CURRICULUM VITAE - NGUYỄN ĐỨC PHÚC
-**CHUYÊN VIÊN PHÁT TRIỂN PHẦN MỀM**
+**TRƯỞNG NHÓM PHÁT TRIỂN PHẦN MỀM**
 
 ![Nguyễn Đức Phúc Avatar](cv-avatar-pnd.jpg)
 
