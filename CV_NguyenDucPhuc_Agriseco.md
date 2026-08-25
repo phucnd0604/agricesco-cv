@@ -1,6 +1,8 @@
 # CURRICULUM VITAE - NGUYỄN ĐỨC PHÚC
 **CHUYÊN VIÊN PHÁT TRIỂN PHẦN MỀM**
 
+![Nguyễn Đức Phúc Avatar](cv-avatar-pnd.jpg)
+
 * **Địa chỉ:** Hà Nội, Việt Nam  
 * **Điện thoại:** 0364.252.470  
 * **Email:** phucnd.work@gmail.com  
@@ -58,19 +60,19 @@
 
 ### **FinBlue / Công ty HLP**
 *Vị trí:* **Senior FinTech Developer** | *Thời gian:* 09/2022 – 08/2023
-* Tham gia phát triển ứng dụng chuyển tiền trực tuyến Anh - Việt Nam trên nền tảng Flutter; thực hiện mã hóa dữ liệu giao dịch và lưu trữ CSDL local.
+* Phát triển ứng dụng chuyển tiền trực tuyến Anh - Việt Nam trên nền tảng Flutter; thực hiện mã hóa dữ liệu giao dịch và lưu trữ CSDL local.
 
 ---
 
 ### **TEADAO / TNT Solution**
 *Vị trí:* **Mobile Team Leader** | *Thời gian:* 01/2022 – 09/2022
-* Quản lý nhóm 8 lập trình viên phát triển các ứng dụng tài chính và blockchain; đạt danh hiệu *Nhân viên xuất sắc năm 2021*.
+* Quản lý nhóm 8 lập trình viên phát triển các ứng dụng tài chính và blockchain; đạt danh hiệu Nhân viên xuất sắc năm 2021.
 
 ---
 
 ### **Công ty Rikkeisoft**
-*Vị trí:* **Mobile Team Leader / iOS Technical Leader / Senior Developer** | *Thời gian:* 03/2014 – 12/2021 *(7 năm cống hiến)*
-* Tham gia phát triển các dự án iOS cho khách hàng Nhật/Anh (Inploi, Favor, Live 3s), module eKYC Ngân hàng, hệ thống Chat doanh nghiệp; phụ trách đào tạo thành viên mới. Đạt danh hiệu *Mentor xuất sắc 2020*, *Nhân viên xuất sắc 2018*, *Nhân viên mới xuất sắc 2015*.
+*Vị trí:* **Mobile Team Leader / iOS Technical Leader / Senior Developer** | *Thời gian:* 03/2014 – 12/2021 *(7 năm)*
+* Phát triển dự án iOS cho khách hàng Nhật/Anh (Inploi, Favor, Live 3s), module eKYC Ngân hàng, Chat doanh nghiệp & đào tạo nhân sự. Đạt danh hiệu Mentor xuất sắc 2020, Nhân viên xuất sắc 2018 & 2015.
 
 ---
 
