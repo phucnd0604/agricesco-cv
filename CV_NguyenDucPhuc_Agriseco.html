@@ -11,11 +11,11 @@
         :root {
             --primary-color: #0c2340; /* Executive Agriseco Deep Navy */
             --accent-color: #1e6091;  /* Tech Sapphire */
-            --highlight: #d97706;     /* Gold Accent */
+            --highlight: #b45309;     /* Deep Gold Accent */
             --text-dark: #1e293b;
             --text-muted: #475569;
             --bg-light: #f8fafc;
-            --border-color: #e2e8f0;
+            --border-color: #cbd5e1;
         }
 
         * {
@@ -41,7 +41,7 @@
             padding: 38px 46px;
         }
 
-        /* HEADER - SINGLE COLUMN INFO + RIGHT AVATAR */
+        /* HEADER - CLEAN 1-COLUMN INFO LEFT + RIGHT AVATAR */
         header {
             border-bottom: 3px solid var(--primary-color);
             padding-bottom: 18px;
@@ -91,6 +91,7 @@
 
         .header-info-item strong {
             color: var(--primary-color);
+            min-width: 80px;
         }
 
         /* AVATAR STYLING */
@@ -102,9 +103,9 @@
             width: 125px;
             height: 155px;
             object-fit: cover;
-            border-radius: 8px;
-            border: 2.5px solid var(--primary-color);
-            box-shadow: 0 4px 12px rgba(12, 35, 64, 0.15);
+            border-radius: 6px;
+            border: 2px solid var(--primary-color);
+            box-shadow: 0 4px 12px rgba(12, 35, 64, 0.12);
         }
 
         /* SECTION STYLING */
@@ -129,10 +130,10 @@
         .section-title::before {
             content: '';
             display: inline-block;
-            width: 7px;
+            width: 6px;
             height: 13px;
-            background-color: var(--highlight);
-            border-radius: 2px;
+            background-color: var(--accent-color);
+            border-radius: 1px;
         }
 
         /* SUMMARY */
@@ -167,24 +168,24 @@
         }
 
         .award-card {
-            background-color: #fffbeb;
-            border: 1px solid #fef3c7;
-            border-left: 3.5px solid var(--highlight);
-            padding: 8px 12px;
-            border-radius: 6px;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 3.5px solid var(--primary-color);
+            padding: 9px 12px;
+            border-radius: 4px;
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
         }
 
         .award-title {
             font-weight: 700;
-            color: #92400e;
+            color: var(--primary-color);
             font-size: 12px;
         }
 
         .award-desc {
             font-size: 11px;
-            color: #78350f;
+            color: var(--text-muted);
             margin-top: 2px;
         }
 
@@ -198,7 +199,7 @@
         .skill-category {
             background-color: var(--bg-light);
             padding: 8px 12px;
-            border-radius: 6px;
+            border-radius: 4px;
             border-left: 3px solid var(--accent-color);
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
@@ -265,11 +266,11 @@
         .job-date {
             font-size: 11px;
             font-weight: 600;
-            color: var(--highlight);
-            background: #fffbeb;
+            color: var(--primary-color);
+            background: #f1f5f9;
             padding: 2px 7px;
             border-radius: 4px;
-            border: 1px solid #fef3c7;
+            border: 1px solid #cbd5e1;
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
         }
@@ -370,6 +371,38 @@
             .project-table {
                 page-break-inside: avoid;
             }
+
+            .award-card {
+                background-color: #f8fafc !important;
+                border-color: #e2e8f0 !important;
+                border-left-color: #0c2340 !important;
+            }
+
+            .skill-category {
+                background-color: #f8fafc !important;
+                border-left-color: #1e6091 !important;
+            }
+
+            .tag {
+                background-color: #e2e8f0 !important;
+                color: #1e293b !important;
+            }
+
+            .tag.highlight {
+                background-color: #dbeafe !important;
+                color: #1e40af !important;
+            }
+
+            .project-table th {
+                background-color: #0c2340 !important;
+                color: #ffffff !important;
+            }
+
+            .job-date {
+                background-color: #f1f5f9 !important;
+                border-color: #cbd5e1 !important;
+                color: #0c2340 !important;
+            }
         }
     </style>
 </head>
@@ -383,11 +416,11 @@
             <h1>NGUYỄN ĐỨC PHÚC</h1>
             <h2>CHUYÊN VIÊN PHÁT TRIỂN PHẦN MỀM / TECHNICAL LEADER</h2>
             <div class="header-info-list">
-                <div class="header-info-item">📍 <strong>Địa chỉ:</strong> Hà Nội, Việt Nam</div>
-                <div class="header-info-item">📞 <strong>Điện thoại:</strong> 0364.252.470</div>
-                <div class="header-info-item">✉️ <strong>Email:</strong> phucnd.work@gmail.com</div>
-                <div class="header-info-item">📅 <strong>Ngày sinh:</strong> 06/04/1991 (Nam)</div>
-                <div class="header-info-item">📏 <strong>Thể chất:</strong> Chiều cao: 180 cm | Cân nặng: 80 kg (Sức khỏe tốt, ngoại hình cân đối)</div>
+                <div class="header-info-item"><strong>Địa chỉ:</strong> Hà Nội, Việt Nam</div>
+                <div class="header-info-item"><strong>Điện thoại:</strong> 0364.252.470</div>
+                <div class="header-info-item"><strong>Email:</strong> phucnd.work@gmail.com</div>
+                <div class="header-info-item"><strong>Ngày sinh:</strong> 06/04/1991 (Nam)</div>
+                <div class="header-info-item"><strong>Thể chất:</strong> Chiều cao: 180 cm | Cân nặng: 80 kg (Sức khỏe tốt, ngoại hình cân đối)</div>
             </div>
         </div>
         <div class="header-avatar-wrap">
@@ -414,19 +447,19 @@
         <div class="section-title">Giải Thưởng & Thành Tựu Cá Nhân</div>
         <div class="awards-container">
             <div class="award-card">
-                <div class="award-title">🏆 Nhân Viên Xuất Sắc Năm 2021</div>
+                <div class="award-title">Nhân Viên Xuất Sắc Năm 2021</div>
                 <div class="award-desc">Công ty TEADAO — Ghi nhận đóng góp xuất sắc trong phát triển hệ thống FinTech & Blockchain.</div>
             </div>
             <div class="award-card">
-                <div class="award-title">🏆 Mentor Xuất Sắc Năm 2020</div>
+                <div class="award-title">Mentor Xuất Sắc Năm 2020</div>
                 <div class="award-desc">Công ty Rikkeisoft — Thành tích nổi bật trong công tác tuyển dụng, đào tạo & xây dựng Đội ngũ Mobile.</div>
             </div>
             <div class="award-card">
-                <div class="award-title">🏆 Nhân Viên Xuất Sắc Năm 2018</div>
+                <div class="award-title">Nhân Viên Xuất Sắc Năm 2018</div>
                 <div class="award-desc">Công ty Rikkeisoft — Ghi nhận chất lượng bàn giao dự án cao và tinh thần trách nhiệm vượt trội.</div>
             </div>
             <div class="award-card">
-                <div class="award-title">🏆 Nhân Viên Mới Xuất Sắc Năm 2015</div>
+                <div class="award-title">Nhân Viên Mới Xuất Sắc Năm 2015</div>
                 <div class="award-desc">Công ty Rikkeisoft — Ghi nhận sự bứt phá và đóng góp tích cực ngay trong năm đầu tiên gia nhập.</div>
             </div>
         </div>
@@ -549,7 +582,7 @@
                 <span class="job-date">01/2022 – 09/2022</span>
             </div>
             <ul class="job-bullets">
-                <li><strong>Vinh danh:</strong> Đạt danh hiệu 🏆 <strong>Nhân viên xuất sắc năm 2021 tại TEADAO</strong>.</li>
+                <li><strong>Vinh danh:</strong> Đạt danh hiệu Nhân viên xuất sắc năm 2021 tại TEADAO.</li>
                 <li><strong>Quản lý & Phát triển:</strong> Quản lý kỹ thuật và trực tiếp thiết kế các ứng dụng tài chính phi tập trung (DeFi), FinTech và Blockchain.</li>
                 <li><strong>Đào tạo & Chuẩn hóa:</strong> Quản lý team 8 nhân sự; xây dựng tài liệu kiến trúc mẫu, chuẩn hóa quy trình GitFlow và tự động hóa CI/CD.</li>
             </ul>
@@ -565,9 +598,9 @@
             </div>
             <ul class="job-bullets">
                 <li><strong>Vinh danh & Giải thưởng:</strong> 
-                    🏆 <strong>Mentor xuất sắc 2020</strong> *(Thành tích đào tạo & xây dựng đội ngũ)* | 
-                    🏆 <strong>Nhân viên xuất sắc 2018</strong> | 
-                    🏆 <strong>Nhân viên mới xuất sắc 2015</strong>.
+                    Mentor xuất sắc 2020 *(Thành tích đào tạo & xây dựng đội ngũ)* | 
+                    Nhân viên xuất sắc 2018 | 
+                    Nhân viên mới xuất sắc 2015.
                 </li>
                 <li><strong>Đào tạo & Xây dựng Đội ngũ (2019 – 2021):</strong> Trực tiếp tham gia công tác tuyển dụng, xây dựng chương trình đào tạo lập trình viên mobile mới, xây dựng Đội ngũ Mobile Rikkeisoft phát triển số lượng và chất lượng vượt bậc.</li>
                 <li><strong>Module eKYC Ngân hàng (2020 – 2021):</strong> Chủ trì kỹ thuật xây dựng ứng dụng eKYC tích hợp module AI quét giấy tờ (OCR), nhận diện khuôn mặt và ghi hình luồng xác thực bảo mật cho Ngân hàng.</li>
@@ -649,7 +682,7 @@
             <div style="font-weight: 600; color: var(--accent-color);">2010 – 2014</div>
         </div>
         <div style="margin-top: 8px; font-size: 12px;">
-            🏆 <strong>Hackathon Windows 8 (2013):</strong> Thành viên đội thi đạt giải Vòng Chung kết.
+            • <strong>Hackathon Windows 8 (2013):</strong> Thành viên đội thi đạt giải Vòng Chung kết.
         </div>
     </section>
 
