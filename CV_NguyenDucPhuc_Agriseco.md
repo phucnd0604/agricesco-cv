@@ -1,8 +1,6 @@
 # CURRICULUM VITAE - NGUYỄN ĐỨC PHÚC
 **CHUYÊN VIÊN PHÁT TRIỂN PHẦN MỀM / TECHNICAL LEADER**
 
-![Nguyễn Đức Phúc Avatar](cv-avatar-pnd.jpg)
-
 * **Địa chỉ:** Hà Nội, Việt Nam  
 * **Điện thoại:** 0364.252.470  
 * **Email:** phucnd.work@gmail.com  
