@@ -12,8 +12,8 @@
 ## TÓM TẮT NĂNG LỰC CHUYÊN MÔN
 
 * **Kinh nghiệm làm việc:** Lập trình viên & Technical Lead có hơn 10 năm kinh nghiệm tham gia phân tích, thiết kế, phát triển và triển khai các ứng dụng phần mềm trên nền tảng Mobile và Web.
-* **Kinh nghiệm nghiệp vụ:** Đã từng tham gia phát triển các sản phẩm trong lĩnh vực Tài chính, Ngân hàng và Bảo hiểm như: Ứng dụng chuyển tiền (FinBlue UK-VN), Module xác thực eKYC cho Ngân hàng, Ứng dụng quản lý bảo hiểm (Tập đoàn Bảo Việt) kết nối CSDL Oracle.
-* **Cơ sở dữ liệu & SQL:** Có kiến thức vững về cơ sở dữ liệu, thành thạo viết và tối ưu các truy vấn SQL (Oracle SQL, PostgreSQL, MySQL, SQLite, Realm DB) phục vụ xử lý dữ liệu và lập báo cáo nghiệp vụ.
+* **Kinh nghiệm nghiệp vụ:** Đã từng tham gia phát triển các sản phẩm trong lĩnh vực Tài chính, Ngân hàng và Bảo hiểm như: Ứng dụng chuyển tiền (FinBlue UK-VN), Module xác thực eKYC cho Ngân hàng, Ứng dụng quản lý bảo hiểm (Tập đoàn Bảo Việt) kết nối CSDL tập trung.
+* **Cơ sở dữ liệu:** Thành thạo các hệ cơ sở dữ liệu chuyên dụng cho Mobile (Realm DB, SQLite, CoreData); có kiến thức cơ bản về các hệ cơ sở dữ liệu quan hệ (Oracle SQL, PostgreSQL, MySQL).
 * **Quy trình & Công cụ:** Hiểu rõ quy trình phát triển phần mềm SDLC (Agile/Scrum), quản lý mã nguồn Git, thực hiện kiểm thử Unit Test, có kinh nghiệm sử dụng Docker và thiết lập chuỗi CI/CD tự động.
 * **Làm việc nhóm & Quản lý:** Có khả năng làm việc cùng BA/QA/PM để làm rõ bài toán nghiệp vụ; từng tham gia đào tạo, hướng dẫn kỹ thuật (mentor) và quản lý tiến độ cho các nhóm lập trình viên.
 
@@ -31,7 +31,7 @@
 ## KỸ NĂNG KỸ THUẬT CỐT LÕI
 
 * **Nghiệp Vụ & Kiến Trúc:** Tài Chính - Ngân Hàng, Bảo Hiểm, FinTech, System Architecture, Clean Architecture, MVVM, SDLC, Agile / Scrum.
-* **Cơ Sở Dữ Liệu & SQL:** Oracle SQL, PostgreSQL, MySQL, SQLite, CoreData, Realm DB, Truy vấn SQL.
+* **Cơ Sở Dữ Liệu:** Realm DB, SQLite, CoreData, Oracle SQL (Cơ bản), PostgreSQL (Cơ bản), MySQL (Cơ bản).
 * **Ngôn Ngữ & Nền Tảng:** Swift, SwiftUI, Objective-C, Flutter (Dart), Kotlin, Java, RxSwift, RESTful APIs, WebSockets.
 * **DevOps, Tools & Kiểm Thử:** Docker, CI/CD (GitHub Actions, Fastlane, Jenkins), Git, Unit Testing, Firebase, Tài liệu kỹ thuật.
 
@@ -59,7 +59,7 @@
 ### **FinBlue / Công ty HLP**
 *Vị trí:* **Senior FinTech Developer** | *Thời gian:* 09/2022 – 08/2023
 * **Phát triển ứng dụng:** Tham gia phát triển ứng dụng chuyển tiền trực tuyến giữa Anh và Việt Nam trên nền tảng Flutter.
-* **Xử lý dữ liệu & Bảo mật:** Thực hiện mã hóa dữ liệu giao dịch, thiết kế CSDL local (SQLite/Realm) và tối ưu các câu lệnh SQL tra cứu lịch sử.
+* **Xử lý dữ liệu local:** Thực hiện mã hóa dữ liệu giao dịch, thiết kế CSDL local trên Mobile (SQLite/Realm) phục vụ lưu trữ và tra cứu lịch sử.
 
 ---
 
@@ -84,7 +84,7 @@
 ### **Tập đoàn Bảo Việt (BaoViet Holdings)**
 *Vị trí:* **iOS Software Engineer** | *Thời gian:* 03/2018 – 03/2019
 * **Phát triển ứng dụng:** Phát triển chức năng trên ứng dụng quản lý bảo hiểm cho khách hàng sử dụng ngôn ngữ Swift.
-* **Kết nối dữ liệu:** Viết các câu lệnh SQL và tích hợp dữ liệu với hệ thống CSDL Oracle của tập đoàn.
+* **Tích hợp dữ liệu:** Lập trình giao tiếp API để truy vấn và hiển thị dữ liệu hợp đồng bảo hiểm từ hệ thống backend.
 
 ---
 
@@ -92,7 +92,7 @@
 
 | Tên Dự Án | Lĩnh Vực & Vai Trò | Công Nghệ Sử Dụng |
 | :--- | :--- | :--- |
-| **Bảo Hiểm Bảo Việt** | Bảo Hiểm / Tài Chính<br>*Software Engineer* | Swift, Oracle SQL, Alamofire, CoreData |
+| **Bảo Hiểm Bảo Việt** | Bảo Hiểm / Tài Chính<br>*Software Engineer* | Swift, Alamofire, CoreData, REST API |
 | **FinBlue Remittance** | FinTech / Chuyển tiền<br>*Senior Developer* | Flutter, Dart, SQLite, REST API |
 | **Banking eKYC Module** | Bảo mật / Ngân hàng<br>*Technical Lead* | Flutter, iOS/Android, AI OCR, Live Video |
 | **IM Chat Platform** | Truyền thông Doanh nghiệp<br>*Technical Lead* | iOS Native, WebSockets, E2EE, CallKit |
