@@ -1,9 +1,13 @@
 # CURRICULUM VITAE - NGUYỄN ĐỨC PHÚC
 **CHUYÊN VIÊN PHÁT TRIỂN PHẦN MỀM / TECHNICAL LEADER**
 
+![Nguyễn Đức Phúc Avatar](cv-avatar-pnd.jpg)
+
 📍 **Địa chỉ**: Hà Nội, Việt Nam  
-📞 **Điện thoại**: 0364.252.470 | ✉️ **Email**: phucnd.work@gmail.com  
-👤 **Thông tin cá nhân**: Sinh ngày 06/04/1991 | Nam | **Chiều cao**: 180 cm | **Cân nặng**: 80 kg (Sức khỏe tốt, ngoại hình cân đối)
+📞 **Điện thoại**: 0364.252.470  
+✉️ **Email**: phucnd.work@gmail.com  
+📅 **Ngày sinh**: 06/04/1991 (Nam)  
+📏 **Thể chất**: Chiều cao: 180 cm | Cân nặng: 80 kg (Sức khỏe tốt, ngoại hình cân đối)  
 
 ---
 
